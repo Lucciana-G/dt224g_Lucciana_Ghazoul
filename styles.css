@@ -1,6 +1,6 @@
 *{box-sizing:border-box;}
 body{
-   background-color:rgb(249, 227, 201);
+   background-color:rgb(245, 230, 213);
 
 }
 header{
@@ -73,4 +73,15 @@ nav ul li a{
     cursor: pointer;
     border-radius: 10px;
 }
-
+.introduction{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    max-width: 800px;
+    margin: 0 auto;
+}

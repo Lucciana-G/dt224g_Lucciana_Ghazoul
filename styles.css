@@ -1,7 +1,21 @@
 *{box-sizing:border-box;}
-.header-container{
+body{
+   background-color:rgb(249, 227, 201);
+
+}
+header{
     display:flex;
     flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+}
+
+.logo-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    
 }
 logo img{
     width: 100px;
@@ -15,14 +29,14 @@ h1{
     justify-content:flex-start;
 }
 nav ul{
-    font-size: 1.4rem;;
-    
+    font-size: 1.2rem;
     display:flex;
+    justify-content:flex-end;
     list-style-type:none;
     gap:20px;
-    justify-content:flex-end;
 }
 nav ul li a{
+    justify-content:flex-end;
     text-decoration:none;
     color:black;
 }

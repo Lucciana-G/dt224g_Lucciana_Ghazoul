@@ -31,12 +31,18 @@ h1{
 nav ul{
     font-size: 1.2rem;
     display:flex;
+    flex-direction:column;
     justify-content:flex-end;
     list-style-type:none;
     gap:20px;
 }
+@media screen and (min-width: 768px) {
+    nav ul{
+        flex-direction:row;
+        justify-content:flex-end;
+    }
+}
 nav ul li a{
-    justify-content:flex-end;
     text-decoration:none;
     color:black;
 }

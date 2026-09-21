@@ -1,0 +1,28 @@
+*{box-sizing:border-box;}
+.header-container{
+    display:flex;
+    flex-direction:row;
+}
+logo img{
+    width: 100px;
+    height: auto;
+    margin-left:20px;
+    justify-content:flex-start;
+}
+h1{
+    font-size: 2.5rem;
+    margin-left:20px;
+    justify-content:flex-start;
+}
+nav ul{
+    font-size: 1.4rem;;
+    
+    display:flex;
+    list-style-type:none;
+    gap:20px;
+    justify-content:flex-end;
+}
+nav ul li a{
+    text-decoration:none;
+    color:black;
+}

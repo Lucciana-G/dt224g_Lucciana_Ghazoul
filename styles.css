@@ -17,20 +17,23 @@ ul {
   padding: 0;
 }
 
+a {
+  color: inherit;
+}
 
 header{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    width:100%;
+   
+  padding: 15px;
+  background-color: white;
+
 }
 
 .logo-container{
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-start;
-    
+   display: flex;         
+  align-items: center;
+  gap: 15px;
+  font-size: 28px;
+  font-weight: bold;
 }
 .logo{
     width: 100px;
@@ -38,46 +41,38 @@ header{
     margin-left:20px;
     justify-content:flex-start;
 }
-h1{
-    font-size: 2.5rem;
-    margin-left:20px;
-    justify-content:flex-start;
+nav li a {
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+  font-weight: bold;
 }
-nav ul{
-    font-size: 1.2rem;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-    list-style-type:none;
-    gap:20px;
-}
-@media screen and (min-width: 768px) {
-    nav ul{
-        flex-direction:row;
-        justify-content:flex-end;
-    }
-}
-nav ul li a{
-    text-decoration:none;
-    color:black;
-    font-weight:bold;
+.knapp {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #536e46;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.hero{
-    background-image: url('images/hero.jpg');
-    background-size: cover;
-    background-position: 100%;
-    height: 350px;
-    width: 70%;
-    margin:0px;
-    padding:70px;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color:white;
-    border:1px black solid;
+.knapp:hover {
+  background-color: #3f5535;
 }
+
+
+.hero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 15px;
+}
+.hero h1 {
+  font-size: 32px;
+  margin-top: 0;
+}
+
 @media screen and (min-width:768px){
     .hero{
         width:100%;

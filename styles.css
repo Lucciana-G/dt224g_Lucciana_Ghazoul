@@ -1,8 +1,16 @@
-
+*{ box-sizing: border-box; }
 body{
    background-color:rgb(245, 230, 213);
-
+   margin: 0;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #222;
 }
+
+img { max-width: 100%; 
+}
+
 header{
     display:flex;
     flex-direction:row;

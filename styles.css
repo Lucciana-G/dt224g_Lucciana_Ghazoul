@@ -1,14 +1,14 @@
 *{ box-sizing: border-box; }
 body{
-   background-color:rgb(245, 230, 213);
+   background-color:beige;
    margin: 0;
   font-family: Georgia, serif;
   font-size: 18px;
   line-height: 1.5;
-  color: #222;
+  color: black;
 }
 
-img { max-width: 100%; 
+img { max-width: 90%; 
 }
 
 ul {
@@ -24,7 +24,7 @@ a {
 header{
    
   padding: 15px;
-  background-color: white;
+  background-color:beige;
 
 }
 
@@ -32,17 +32,20 @@ header{
    display: flex;         
   align-items: center;
   gap: 15px;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
 }
-.logo{
-    width: 100px;
-    height: auto;
-    margin-left:20px;
-    justify-content:flex-start;
+.foot-logo {
+  display: flex;          /* Flexbox: logga och text bredvid varandra */
+  flex-direction: column;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: bold;
 }
+
 nav li a {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 8px 0;
   text-decoration: none;
   font-weight: bold;
@@ -50,19 +53,18 @@ nav li a {
 .knapp {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #536e46;
+  background-color:darkolivegreen;
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
 .knapp:hover {
-  background-color: #3f5535;
+  background-color: darkolivegreen;
 }
 
-
 .hero{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/hero.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -73,139 +75,99 @@ nav li a {
   margin-top: 0;
 }
 
-@media screen and (min-width:768px){
-    .hero{
-        width:100%;
-    }
-}
-.hero-button{
-    background-color:darkolivegreen;
-    color:black;
-    border: none;
-    padding: 10px 20px;
-    width: 200px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 10px;
-}
+
 .introduction{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding: 20px;
-    font-size: 1.2rem;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 15px;
+  text-align: center;
+}
+.card-container h2 {
+  text-align: center;
 }
 
-
-h4{
-    font-size:30px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    text-align: center;
-    
-}
-.card p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-   text-align: center;
-    
-}
 .card-container{
-    display: flex;
-    background-color: darkolivegreen;
-    gap:50px;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    height: auto;
+    background-color:darkolivegreen;
+    color: white;
+    padding: 30px 15px;
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: beige;
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 300px;
-    height: 400px;
-    margin:17px;
+.card-list{
+    display: flex;         
+  flex-direction: column;
+  gap: 30px;
 }
-.last-section{
-    margin: 16px;
-    padding: 20px;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column;
-}
-.last-section h5{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: large;
+.card img {
+  width: 100%;
 }
 
-.plan-botton{
-    background-color:darkolivegreen;
+.last-section{
+    padding: 30px 15px;
+    text-align: center;
+}
+.last-section p{
+    line-height: 1.5;
+}
+
+footer {
+  background-color: darkolivegreen;
+  color: white;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+.hero-button, .plan-button{
+     background-color:darkolivegreen;
     color:black;
     border: none;
     padding: 10px 20px;
-    width: 200px;
+    border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 10px;
-    justify-content: flex-end;
 }
-.logo-container2{
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    
-}
-.site-footer{
-    background-color: darkolivegreen;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    align-items:center;
-    width:100%;
-}
-.footer-container{
+
+@media (min-width: 768px) {
+
+  header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 auto;
-}
-h6{
-   font-size: 1.5rem;
-    justify-content:flex-start; 
-}
-.footer-column{
-    flex:1;
-    padding: 0 20px;
-}
-.foter-column p, 
-.footercolumn ul{
-    font-size: 14px;
-}
-.footer-column ul li{
-    margin-bottom: 8px;
-}
-.footer-column a{
-    text-decoration: none;
-    color:black;
+    align-items: center;
+    padding: 15px 40px;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-end;      /* Menyn bredvid varandra */
+    gap: 30px;
+  }
+
+  .hero {
+    padding: 120px 40px;
+  }
+
+  .hero h1,
+  .hero p {
+    max-width: 450px;
+  }
+
+  .card-list {
+    flex-direction: row; /* Korten bredvid varandra */
+  }
+
+  .card {
+    flex: 1;
+  }
+
+  .foot-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 30px 40px;
+  }
 }
 
-@media(max-width:768px){
-    .footer-container{
-        flex-direction: column;
-        gap: 30px;
-    }
-    .footer-column{
-        padding:0;
-    }
-}

@@ -1,4 +1,5 @@
 *{ box-sizing: border-box; }
+
 body{
    background-color:beige;
    margin: 0;
@@ -8,7 +9,7 @@ body{
   color: black;
 }
 
-img { max-width: 90%; 
+img { max-width: 100%; 
 }
 
 ul {
@@ -21,35 +22,24 @@ a {
   color: inherit;
 }
 
-header{
-   
+.header{
   padding: 15px;
   background-color:beige;
-
 }
-
-.logo-container{
-   display: flex;         
+.header-box{
+  display: flex;          
   align-items: center;
   gap: 15px;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bold;
 }
-.foot-logo {
-  display: flex;          /* Flexbox: logga och text bredvid varandra */
-  flex-direction: column;
-  gap: 15px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
 nav li a {
-  display: flex;
-  flex-direction: column;
+  display: block;
   padding: 8px 0;
   text-decoration: none;
   font-weight: bold;
 }
+
 .knapp {
   display: inline-block;
   padding: 12px 24px;
@@ -57,10 +47,6 @@ nav li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-}
-
-.knapp:hover {
-  background-color: darkolivegreen;
 }
 
 .hero{
@@ -75,14 +61,10 @@ nav li a {
   margin-top: 0;
 }
 
-
 .introduction{
     max-width: 700px;
   margin: 0 auto;
   padding: 30px 15px;
-  text-align: center;
-}
-.card-container h2 {
   text-align: center;
 }
 
@@ -90,24 +72,54 @@ nav li a {
     background-color:darkolivegreen;
     color: white;
     padding: 30px 15px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
 }
-.card-list{
-    display: flex;         
-  flex-direction: column;
-  gap: 30px;
+.card-container h3 {
+  padding: 10px;
+  text-align: center;
+  color: black;
+ 
 }
-.card img {
+.card p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: center;
+   color: black;
+}
+.card{
+    box-sizing: border-box;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.card-container img {
   width: 100%;
+  object-fit: cover;
+}
+
+.card-list{
+   display: flex;         
+   flex-direction: column;
+   gap: 20px;
 }
 
 .last-section{
+    max-width: 700px;
+    margin: 0 auto;
     padding: 30px 15px;
     text-align: center;
+    
 }
 .last-section p{
     line-height: 1.5;
 }
-
+.foot-container {
+  display: flex;         
+  flex-direction: column;
+  gap: 15px;
+  font-size: 20px;
+}
 footer {
   background-color: darkolivegreen;
   color: white;
@@ -129,20 +141,24 @@ footer p {
     font-size: 1rem;
     cursor: pointer;
 }
+.hero-button:hover,.plan-button:hover {
+  background-color: rgb(157, 181, 115);
+}
 
 @media (min-width: 768px) {
 
-  header {
+ .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
     padding: 15px 40px;
+   
   }
 
   nav ul{
     display: flex;
     flex-direction:row;
-    justify-content:flex-end;      /* Menyn bredvid varandra */
+    justify-content:flex-end;    
     gap: 30px;
   }
 
@@ -156,18 +172,23 @@ footer p {
   }
 
   .card-list {
-    flex-direction: row; /* Korten bredvid varandra */
+    flex-direction: row; 
   }
 
   .card {
     flex: 1;
   }
-
-  .foot-logo {
+  .logo-container{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: flex-end;
+    }
+  .foot-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
     padding: 30px 40px;
   }
+  
 }
 

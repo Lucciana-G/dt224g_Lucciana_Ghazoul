@@ -11,4 +11,4 @@ Startsida för den fiktiva naturdestinationen Norrgläntan, byggd med semantisk 
 https://lucciana-g.github.io/dt224g_Lucciana_Ghazoul/ 
 
 ## Figma-mockup
-https://www.figma.com/files/folder/657344281 
+https://www.figma.com/site/9QVoJVNyWHnBvcaVQ3Gq8T/Untitled?t=FvPmZYpJZNABfNyb-1 

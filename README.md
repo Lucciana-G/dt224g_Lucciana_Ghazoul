@@ -8,7 +8,7 @@ Startsida för den fiktiva naturdestinationen Norrgläntan, byggd med semantisk 
 - `images/` – hero.jpg, vandra.jpg, paddla.jpg, upptack.jpg, logo.svg
 
 ## Publicerad sida
-
+https://lucciana-g.github.io/dt224g_Lucciana_Ghazoul/ 
 
 ## Figma-mockup
-LÄNK HIT
+https://www.figma.com/files/folder/657344281 
